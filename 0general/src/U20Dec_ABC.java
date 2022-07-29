@@ -41,7 +41,7 @@ public class U20Dec_ABC {
     	b = arr[1];
     	abc = arr[6];
     	c = abc-a-b;
-    	System.out.println(a+" "+b+" "+c);
+    	out.println(a+" "+b+" "+c);
     	
     
     }

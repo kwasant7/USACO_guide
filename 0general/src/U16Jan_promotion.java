@@ -37,12 +37,10 @@ public class U16Jan_promotion {
     
     static void solve() {
         int gp = Np-Op;
-        Og -= gp;
-        int sg = Ng-Og;
-        Os-=sg;
-        int bs = Ns-Os;
-        System.out.println(bs);
-        System.out.println(sg);
-        System.out.println(gp);
+        int sg = Ng-Og+gp;
+        int bs = Ns-Os+Ng-Og+gp;
+        out.println(bs);
+        out.println(sg);
+        out.println(gp);
     }
 }
