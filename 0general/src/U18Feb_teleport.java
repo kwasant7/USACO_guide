@@ -34,7 +34,7 @@ public class U18Feb_teleport {
         int ab = Math.abs(a-b);
         int axb = Math.abs(a-x)+Math.abs(b-y);
         int ayb = Math.abs(a-y)+Math.abs(b-x);
-        System.out.println(Math.min(Math.min(ab, axb), ayb));
+        out.println(Math.min(Math.min(ab, axb), ayb));
         
     }
 

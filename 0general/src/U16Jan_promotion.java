@@ -8,7 +8,6 @@ public class U16Jan_promotion {
     static StringTokenizer st;    
     static String f = "promote";
     static int Ob,Nb,Os,Ns,Og,Ng,Op,Np;
-    static String b,s,g,p;
 
     public static void main(String[] args) throws IOException {
         in = new BufferedReader(new FileReader(f+".in"));
@@ -21,18 +20,18 @@ public class U16Jan_promotion {
     }
     
     static void init() throws IOException {
-    	b = in.readLine();
-    	Ob = b.charAt(0)-48;
-    	Nb = b.charAt(2)-48;
-    	s = in.readLine();
-    	Os = s.charAt(0)-48;
-    	Ns = s.charAt(2)-48;
-    	g = in.readLine();
-    	Og = g.charAt(0)-48;
-    	Ng = g.charAt(2)-48;
-    	p = in.readLine();
-    	Op = p.charAt(0)-48;
-    	Np = p.charAt(2)-48;
+    	st = new StringTokenizer(in.readLine());
+    	Ob = Integer.parseInt(st.nextToken());
+    	Nb = Integer.parseInt(st.nextToken());
+    	st = new StringTokenizer(in.readLine());
+    	Os = Integer.parseInt(st.nextToken());
+    	Ns = Integer.parseInt(st.nextToken());
+    	st = new StringTokenizer(in.readLine());
+    	Og = Integer.parseInt(st.nextToken());
+    	Ng = Integer.parseInt(st.nextToken());
+    	st = new StringTokenizer(in.readLine());
+    	Op = Integer.parseInt(st.nextToken());
+    	Np = Integer.parseInt(st.nextToken());
     }
     
     static void solve() {

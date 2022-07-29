@@ -11,13 +11,11 @@ public class U20Dec_ABC {
     static int a,b,c,ab,bc,ca,abc;
 
     public static void main(String[] args) throws IOException {
-        in = new BufferedReader(new FileReader(f+".in"));
-        out = new PrintWriter(new FileWriter(f+".out"));
+        in = new BufferedReader(new InputStreamReader(System.in));
+        
         init();
         solve();
-        
-        in.close();
-        out.close();
+
     }
     
     static void init() throws IOException {
@@ -41,7 +39,7 @@ public class U20Dec_ABC {
     	b = arr[1];
     	abc = arr[6];
     	c = abc-a-b;
-    	out.println(a+" "+b+" "+c);
+    	System.out.println(a+" "+b+" "+c);
     	
     
     }

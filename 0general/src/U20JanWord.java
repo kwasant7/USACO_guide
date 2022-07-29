@@ -6,7 +6,7 @@ public class U20JanWord {
     static BufferedReader in;
     static PrintWriter out;
     static StringTokenizer st;    
-    static String f = "test";
+    static String f = "word";
     static String b, e, ans;
     
     public static void main(String[] args) throws IOException {
@@ -30,19 +30,20 @@ public class U20JanWord {
         
        	int n = Integer.parseInt(temp[0]);
        	int k = Integer.parseInt(temp[1]);
-        int charcnt = 0;
         ans = a[0];
-       	
-        for(int i =0;i<n+1;i++) {
-        	String curr = a[i+1];
-        	if(curr.length()+charcnt>k) {
-        		ans +="\n"+curr;
-        		charcnt = curr.length();
-        	}else {
-        		ans+=" "+curr;
-        		charcnt+=curr.length();
-        	}
-        }
-        System.out.println(ans);
+        int len = a[0].length();
+       	for(int i =1;i<n;i++){
+       		String nw = a[i];
+       		if(len+nw.length()>k) {
+       			ans += "\n"+nw;
+       			len = nw.length();
+       		}else {
+       			ans+= " "+nw;
+       			len += nw.length();
+       		}
+       	}
+       	out.println(ans);
+        
+        
     }
 }
